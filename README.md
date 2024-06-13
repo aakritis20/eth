@@ -30,15 +30,18 @@ string public tokenAbb = "or";
 uint public totalSupply = 10;
 
 // mapping variable here
+
 mapping(address => uint) public balance;
 
 // mint function
+
 function mint (address _add, uint _value) public {
     totalSupply += _value;
     balance[_add] += _value;
 }
 
 // burn function
+
 function burn (address _add, uint _value) public {
     if (balance[_add]>= _value) {
     totalSupply -= _value;
