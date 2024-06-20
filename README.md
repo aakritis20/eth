@@ -1,9 +1,12 @@
-Hi there, My name is Aakriti Singh and here i am gonna briefly give the explanation of the given assessment/project.
-so firstly what i did in this project is i i declared three variable named aa tokenName, tokenAbb, totalSupply. and they all are public so that anyone can access them.
-then i declared i did mapping, so that address will point to totalSupply and tells the balance.
-then i declared another function named as mint and in that function i declared two parameters named as address and value and add the value to total supply and the address of the balance.
-and then lastly i declared another function named as burn function which works exactly opposite to the mint function basically burn function deletes the value from total supply and a balance of sender.
-To use the solidity we are using the online website named as remix.ethereum.org, which works exactly same as vs code
+PROJECT
+\
+Make a token.
+
+Here, the code creates a token with the following additional functions in addition to the address to uint name mapping for balance, which includes the token's name, abbreviation, and total supply:
+
+The min function adds the value to the total supply and the address of the balance after taking two parameters, an address and a value.
+
+The burn function eliminates a value from the sender's balance as well as the entire supply in the opposite way to the mint function. Additionally, in order to use Solidity, we must install Remix Ide or use it online by going to remix.ethereum.org. Similar to VS code, it functions.
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
