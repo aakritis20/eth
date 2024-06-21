@@ -1,6 +1,6 @@
 PROJECT
 \
-Make a token.
+Create a token.
 
 Here, the code creates a token with the following additional functions in addition to the address to uint name mapping for balance, which includes the token's name, abbreviation, and total supply:
 
