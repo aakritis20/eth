@@ -27,33 +27,33 @@ to the amount that is supposed to be burned.
 */ 
 # Executing Program
 
-contract MyToken {
+    contract MyToken {
 
-// public variables here
-string public tokenName = "oracle";
-string public tokenAbb = "or";
-uint public totalSupply = 10;
+    // public variables here
+    string public tokenName = "oracle";
+    string public tokenAbb = "or";
+    uint public totalSupply = 10;
 
-// mapping variable here
+    // mapping variable here
 
-mapping(address => uint) public balance;
+    mapping(address => uint) public balance;
 
-// mint function
+    // mint function
 
-function mint (address _add, uint _value) public {
+    function mint (address _add, uint _value) public {
     totalSupply += _value;
     balance[_add] += _value;
-}
+    }
 
-// burn function
+    // burn function
 
-function burn (address _add, uint _value) public {
-    if (balance[_add]>= _value) {
-    totalSupply -= _value;
-    balance[_add] -= _value;
-}
-}
-}
+    function burn (address _add, uint _value) public {
+        if (balance[_add]>= _value) {
+        totalSupply -= _value;
+        balance[_add] -= _value;
+    }
+    }
+    }
 
 # Author
 Aakriti Singh
