@@ -1,4 +1,4 @@
-PROJECT
+# PROJECT
 \
 Create a token.
 
@@ -23,7 +23,9 @@ It will take an address and value just like the mint functions. It will then ded
 and from the balance of the “sender”.
 5. Lastly, your burn function should have conditionals to make sure the balance of "sender" is greater than or equal
 to the amount that is supposed to be burned.
-*/
+
+*/ 
+# Executing Program
 
 contract MyToken {
 
@@ -52,3 +54,11 @@ function burn (address _add, uint _value) public {
 }
 }
 }
+
+# Author
+Aakriti Singh
+singhaakriti203@gmail.com
+
+# License
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
